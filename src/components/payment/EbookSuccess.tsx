@@ -1,6 +1,6 @@
 "use client";
 
-import { BookOpen, CircleCheckBig, MessageCircle, PawPrint } from "lucide-react";
+import { BookOpen, CircleCheckBig, PawPrint } from "lucide-react";
 import Link from "next/link";
 
 const EBOOK_URL = "/ebooks/Elimine_as_Mordidas_e_a_Destruicao_de_Objetos.pdf";
@@ -45,19 +45,6 @@ MEU MÉTODO CÃO
             <BookOpen className="h-5 w-5" />
             Clique aqui para baixar o PDF Elimine_as_Mordidas_e_a_Destruicao_de_Objetos
           </a>
-          <p className="text-xs font-medium text-zinc-400">
-            Salve o arquivo no seu celular ou computador para ler quando quiser.
-          </p>
-
-          <a
-            href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Comprei%20o%20ebook%20MEU%20M%C3%89TODO%20C%C3%83O%20e%20preciso%20de%20ajuda."
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex h-14 w-full items-center justify-center gap-2 rounded-full border-2 border-[#FED7AA] bg-white px-8 text-base font-semibold text-[#111111] transition-all hover:-translate-y-0.5 hover:border-[#C2410C]"
-          >
-            <MessageCircle className="h-5 w-5" />
-            Suporte pelo WhatsApp
-          </a>
 
           <Link
             href="/"
@@ -79,10 +66,6 @@ MEU MÉTODO CÃO
             <li className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[#F97316]" />
               Abra com qualquer leitor de PDF (Adobe, Google Drive, iBooks).
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[#F97316]" />
-              Precisando de ajuda? Fale com a gente no WhatsApp.
             </li>
           </ul>
         </div>
