@@ -89,7 +89,7 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
     <div className="min-h-screen bg-white font-sans text-[#111111]">
       {/* NAVBAR */}
       <header className="sticky top-0 z-50 h-20 border-b border-[#F97316]/30 bg-[#FFF7ED]/80 backdrop-blur-[18px]">
-        <div className="mx-auto flex h-full max-w-[1280px] items-center justify-between px-6">
+        <div className="mx-auto flex h-full max-w-[1080px] items-center justify-between px-6">
           <button
             type="button"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -143,7 +143,7 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
 
       {/* FAIXA AMBIENTAL */}
       <div className="border-b border-[#111111]/10 bg-gradient-to-r from-[#F97316] via-[#EA580C] to-[#C2410C] py-2.5">
-        <div className="mx-auto flex max-w-[1280px] flex-wrap items-center justify-center gap-x-8 gap-y-1 px-6 text-sm font-semibold text-white">
+        <div className="mx-auto flex max-w-[1080px] flex-wrap items-center justify-center gap-x-8 gap-y-1 px-6 text-sm font-semibold text-white">
           <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4" /> Acesso imediato</span>
           <span className="flex items-center gap-1.5"><Zap className="h-4 w-4" /> Entrega via PDF</span>
           <span className="flex items-center gap-1.5"><BadgeCheck className="h-4 w-4" /> +7.000 tutores</span>
@@ -168,16 +168,16 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
           }}
         />
 
-        <div className="relative mx-auto grid max-w-[1280px] items-center gap-12 px-6 pb-20 pt-20 sm:gap-16 sm:pb-[110px] sm:pt-[110px] lg:grid-cols-2">
+        <div className="relative mx-auto grid max-w-[1080px] items-center gap-12 px-6 pb-14 pt-14 sm:gap-12 sm:pb-[80px] sm:pt-[80px] lg:grid-cols-2">
           <motion.div {...fadeUp} className="text-center sm:text-left">
-            <h1 className="mx-auto mt-6 max-w-xl text-[40px] font-extrabold leading-[1.05] tracking-[-0.03em] text-white sm:mx-0 sm:text-[54px] sm:leading-[1.04] lg:text-[68px]">
+            <h1 className="mx-auto mt-6 max-w-xl text-[30px] font-extrabold leading-[1.06] tracking-[-0.03em] text-white sm:mx-0 sm:text-[40px] sm:leading-[1.05] lg:text-[48px]">
               Elimine as mordidas e a{" "}
               <span className="bg-gradient-to-r from-[#FDBA74] to-[#F97316] bg-clip-text text-transparent">
                 destruição
               </span>{" "}
               de objetos de vez.
             </h1>
-            <p className="mx-auto mt-5 max-w-lg text-[17px] leading-relaxed text-[#D6D3D1] sm:mx-0 sm:mt-6 sm:text-lg">
+            <p className="mx-auto mt-5 max-w-lg text-[15px] leading-relaxed text-[#D6D3D1] sm:mx-0 sm:mt-6 sm:text-base">
               Descubra as causas reais e aplique técnicas práticas, sem gritos
               nem punições, para o seu cachorro parar de morder móveis, calçados
               e objetos — a partir de hoje.
@@ -257,14 +257,14 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
       </section>
 
       {/* CONTEÚDO */}
-      <section id="conteudo" className="relative mx-auto max-w-[1280px] px-6 py-20 sm:py-[110px]">
+      <section id="conteudo" className="relative mx-auto max-w-[1080px] px-6 py-14 sm:py-[80px]">
         <PawField className="text-[#111111]/[0.04]" />
         <KibbleField />
         <motion.div {...fadeUp} className="relative text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-[#F97316]/40 bg-[#FFF7ED] px-4 py-1.5 text-sm font-bold text-[#C2410C]">
             <Sparkles className="h-4 w-4" /> Método prático
           </span>
-          <h2 className="mt-5 text-[32px] font-bold tracking-tight text-[#111111] sm:text-[48px]">
+          <h2 className="mt-5 text-[24px] font-bold tracking-tight text-[#111111] sm:text-[34px]">
             O que você vai aprender
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-xl font-medium text-[#737373]">
@@ -300,15 +300,15 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
       </section>
 
       {/* BENEFÍCIOS */}
-      <section id="beneficios" className="relative overflow-hidden border-y border-[#111111]/10 bg-gradient-to-br from-[#FFF7ED] via-[#FFEDD5] to-[#FED7AA] py-20 sm:py-[110px]">
+      <section id="beneficios" className="relative overflow-hidden border-y border-[#111111]/10 bg-gradient-to-br from-[#FFF7ED] via-[#FFEDD5] to-[#FED7AA] py-14 sm:py-[80px]">
         <PawField className="text-[#111111]/[0.05]" />
         <KibbleField />
-        <div className="relative mx-auto max-w-[1280px] px-6">
+        <div className="relative mx-auto max-w-[1080px] px-6">
           <motion.div {...fadeUp} className="text-center">
             <span className="inline-flex items-center gap-2 rounded-full border border-[#111111]/15 bg-white/70 px-4 py-1.5 text-sm font-bold text-[#C2410C] shadow-sm backdrop-blur-md">
               <BadgeCheck className="h-4 w-4" /> Por que os tutores amam
             </span>
-            <h2 className="mt-5 text-[32px] font-bold tracking-tight text-[#111111] sm:text-[48px]">
+            <h2 className="mt-5 text-[24px] font-bold tracking-tight text-[#111111] sm:text-[34px]">
               Você aplica hoje e nota a diferença
             </h2>
           </motion.div>
@@ -340,7 +340,7 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
       </section>
 
       {/* DENTRO DO EBOOK */}
-      <section className="relative mx-auto max-w-[1280px] px-6 py-20 sm:py-[110px]">
+      <section className="relative mx-auto max-w-[1080px] px-6 py-14 sm:py-[80px]">
         <PawField className="text-[#111111]/[0.04]" />
         <KibbleField />
         <div className="relative grid items-center gap-16 lg:grid-cols-2">
@@ -391,12 +391,12 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
       </section>
 
       {/* DEPOIMENTOS */}
-      <section id="depoimentos" className="relative overflow-hidden border-y border-[#111111]/10 bg-gradient-to-br from-[#FFF7ED] via-[#FFEDD5] to-[#FED7AA] py-20 sm:py-[110px]">
+      <section id="depoimentos" className="relative overflow-hidden border-y border-[#111111]/10 bg-gradient-to-br from-[#FFF7ED] via-[#FFEDD5] to-[#FED7AA] py-14 sm:py-[80px]">
         <PawField className="text-[#111111]/[0.05]" />
         <KibbleField />
-        <div className="relative mx-auto max-w-[1280px] px-6">
+        <div className="relative mx-auto max-w-[1080px] px-6">
           <motion.div {...fadeUp} className="text-center">
-            <h2 className="text-[32px] font-bold tracking-tight text-[#111111] sm:text-[48px]">
+            <h2 className="text-[24px] font-bold tracking-tight text-[#111111] sm:text-[34px]">
               Quem leu, aprovou
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-xl font-medium text-[#737373]">
@@ -440,7 +440,7 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
       </section>
 
       {/* PREÇO */}
-      <section id="preco" className="relative overflow-hidden bg-gradient-to-br from-[#C2410C] via-[#111111] to-[#080808] py-20 sm:py-[110px]">
+      <section id="preco" className="relative overflow-hidden bg-gradient-to-br from-[#C2410C] via-[#111111] to-[#080808] py-14 sm:py-[80px]">
         <div
           className="pointer-events-none absolute left-1/2 top-0 h-[24rem] w-[24rem] -translate-x-1/2 rounded-full bg-[#F97316]/20 blur-3xl"
         />
@@ -454,7 +454,7 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
             backgroundSize: "28px 28px",
           }}
         />
-        <motion.div {...fadeUp} className="relative mx-auto max-w-[1280px] px-6 text-center">
+        <motion.div {...fadeUp} className="relative mx-auto max-w-[1080px] px-6 text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-[#F97316]/40 bg-[#111111]/70 px-4 py-1.5 text-sm font-bold text-[#FDBA74]">
             <Zap className="h-4 w-4" /> Oferta por tempo limitado
           </span>
@@ -462,7 +462,7 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
             <span className="inline-flex items-center rounded-full bg-red-500/25 px-4 py-1 text-xl font-extrabold text-white line-through decoration-red-300 decoration-[3px] sm:text-2xl">
               R$ 79,90
             </span>
-            <h2 className="mt-3 text-[26px] font-bold tracking-tight text-white sm:text-[32px]">
+            <h2 className="mt-3 text-[20px] font-bold tracking-tight text-white sm:text-[26px]">
               Por apenas
             </h2>
             <div className="mt-1 bg-gradient-to-r from-[#FDBA74] to-[#F97316] bg-clip-text text-5xl font-extrabold leading-none tracking-tight text-transparent sm:text-6xl">
@@ -474,7 +474,7 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
           </p>
         </motion.div>
 
-        <motion.div {...fadeUp} className="relative mx-auto mt-16 flex max-w-[1280px] justify-center px-6">
+        <motion.div {...fadeUp} className="relative mx-auto mt-12 flex max-w-[1080px] justify-center px-6">
           <div className="w-full max-w-md">
             <div className="pointer-events-none absolute -inset-3 rounded-[40px] bg-gradient-to-r from-[#F97316] via-[#C2410C] to-[#111111] opacity-50 blur-2xl" />
             <div className="relative rounded-[32px] bg-gradient-to-br from-[#F97316] via-[#C2410C] to-[#111111] p-[2px] shadow-[0_30px_80px_rgba(0,0,0,.45)]">
@@ -534,8 +534,8 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
         </motion.div>
 
         <div aria-hidden className="mx-auto mt-24 max-w-2xl border-t border-white/10" />
-        <motion.div {...fadeUp} className="relative mx-auto mt-16 max-w-[1280px] px-6 text-center">
-          <h2 className="mx-auto max-w-3xl text-[32px] font-bold tracking-tight text-white sm:text-[52px]">
+        <motion.div {...fadeUp} className="relative mx-auto mt-12 max-w-[1080px] px-6 text-center">
+          <h2 className="mx-auto max-w-3xl text-[24px] font-bold tracking-tight text-white sm:text-[36px]">
             Recupere os seus objetos e a sua paz em casa
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/80">
@@ -558,7 +558,7 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
 
       {/* FOOTER */}
       <footer className="border-t border-white/10 bg-[#080808] py-10">
-        <div className="mx-auto flex max-w-[1280px] flex-col items-center justify-between gap-4 px-6 text-sm text-white/60 sm:flex-row">
+        <div className="mx-auto flex max-w-[1080px] flex-col items-center justify-between gap-4 px-6 text-sm text-white/60 sm:flex-row">
           <div className="flex items-center gap-2">
             <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-[#F97316] to-[#111111] text-white">
               <PawPrint className="h-4 w-4" />
