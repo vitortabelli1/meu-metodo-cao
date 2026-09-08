@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import { Agent, fetch as undiciFetch } from "undici";
 import { PLANS, type PlanId } from "@/lib/plans";
 import { accessTokenForPlan } from "@/lib/mp-server";
-import { sendEbookEmail } from "@/lib/ebook-email";
 
 // Ambiente corporativo com proxy que intercepta HTTPS (certificado próprio):
 // usamos um agente que não valida a cadeia de certificados apenas para a Mercado Pago.
@@ -171,23 +170,6 @@ export async function POST(request: Request) {
           },
           { status: 502 }
         );
-      }
-
-      // Cartão aprovado na hora: envia o ebook por e-mail automaticamente.
-      // Não bloqueia a resposta do pagamento em caso de falha no envio.
-      if (formData.payer?.email) {
-        const delivered = await sendEbookEmail(
-          formData.payer.email,
-          formData.payer.first_name
-        );
-        if (!delivered.ok) {
-          console.error(
-            "Mercado Pago (pay) — ebook não entregue por e-mail:",
-            delivered.reason
-          );
-        }
-      } else {
-        console.error("Mercado Pago (pay) — pagamento aprovado sem e-mail do comprador.");
       }
     }
 

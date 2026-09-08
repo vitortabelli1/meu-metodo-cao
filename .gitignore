@@ -43,3 +43,6 @@ next-env.d.ts
 
 # cópia extra do PDF na raiz (a oficial fica em public/ebooks)
 /Elimine_as_Mordidas_e_a_Destruicao_de_Objetos.pdf
+
+.vercel
+.env*
