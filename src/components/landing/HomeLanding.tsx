@@ -122,13 +122,6 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
           </nav>
 
           <div className="flex items-center gap-3">
-<button
-              type="button"
-              onClick={() => scrollTo("preco")}
-              className="inline-flex h-10 cursor-pointer items-center gap-1.5 rounded-full bg-gradient-to-r from-[#C2410C] to-[#111111] px-4 text-sm font-bold text-white shadow-[0_8px_24px_rgba(194,65,12,.45)] transition-all active:scale-95 md:hidden"
->
-              Quero o ebook
-            </button>
             <button
               type="button"
               onClick={() => scrollTo("preco")}
@@ -541,17 +534,13 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
           <p className="mx-auto mt-4 max-w-xl text-lg text-white/80">
             Aplique o guia e veja seu cachorro parar de morder e destruir o que você ama.
           </p>
-          <div className="relative mx-auto mt-10 max-w-3xl overflow-hidden rounded-[32px] border-2 border-[#F97316]/40 shadow-[0_40px_100px_rgba(0,0,0,.45)]">
+          <div className="relative mx-auto mt-10 max-w-3xl overflow-hidden rounded-[32px] shadow-[0_40px_100px_rgba(0,0,0,.45)]">
             <img
               src={IMG.happy}
               alt="Cachorro feliz correndo ao ar livre"
               className="h-56 w-full object-cover"
               loading="lazy"
             />
-            <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#080808]/80 to-transparent" />
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full border border-[#F97316]/40 bg-[#111111]/80 px-4 py-1.5 text-sm font-bold text-[#FDBA74] backdrop-blur">
-              Um lar em paz começa com um cão comportado
-            </div>
           </div>
         </motion.div>
       </section>
