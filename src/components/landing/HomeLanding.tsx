@@ -164,16 +164,16 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
         <div className="relative mx-auto grid max-w-[1080px] items-center gap-12 px-6 pb-14 pt-14 sm:gap-12 sm:pb-[80px] sm:pt-[80px] lg:grid-cols-2">
           <motion.div {...fadeUp} className="text-center sm:text-left">
             <h1 className="mx-auto mt-6 max-w-xl text-[30px] font-extrabold leading-[1.06] tracking-[-0.03em] text-white sm:mx-0 sm:text-[40px] sm:leading-[1.05] lg:text-[48px]">
-              Elimine as mordidas e a{" "}
+              Aprenda a linguagem do seu{" "}
               <span className="bg-gradient-to-r from-[#FDBA74] to-[#F97316] bg-clip-text text-transparent">
-                destruição
+                cachorro
               </span>{" "}
-              de objetos de vez.
+              e transforme a convivência.
             </h1>
             <p className="mx-auto mt-5 max-w-lg text-[15px] leading-relaxed text-[#D6D3D1] sm:mx-0 sm:mt-6 sm:text-base">
-              Descubra as causas reais e aplique técnicas práticas, sem gritos
-              nem punições, para o seu cachorro parar de morder móveis, calçados
-              e objetos — a partir de hoje.
+              Entenda os sinais, emoções e necessidades que influenciam o
+              comportamento canino e descubra como orientar seu pet de forma
+              positiva, sem gritos ou punições.
             </p>
             <div className="mx-auto mt-8 flex max-w-sm flex-col gap-3 sm:mx-0 sm:mt-10 sm:max-w-none sm:flex-row sm:flex-wrap sm:gap-4">
               <button
@@ -224,8 +224,7 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
                       <BookOpen className="h-7 w-7" />
                     </div>
                     <div>
-                      <div className="text-base font-bold leading-snug text-[#111111]">Aprenda a linguagem do seu cachorro e transforme a convivência</div>
-                      <div className="text-sm text-[#737373]">Elimine mordidas e destruição · PDF</div>
+                      <div className="text-base font-bold leading-snug text-[#111111]">Aprenda a linguagem do seu cachorro e transforme a convivência.</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-1 rounded-xl bg-orange-50 px-2.5 py-1.5">
@@ -477,7 +476,7 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
                     Ebook
                   </div>
                   <div className="mt-1 text-base font-bold uppercase leading-snug text-white">
-                    Aprenda a linguagem do seu cachorro e transforme a convivência
+                    Aprenda a linguagem do seu cachorro e transforme a convivência.
                   </div>
                 </div>
                 <div className="mt-1 text-sm text-[#FDBA74]">Mordidas e destruição · PDF · Acesso imediato</div>
