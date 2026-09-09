@@ -224,7 +224,7 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
                       <BookOpen className="h-7 w-7" />
                     </div>
                     <div>
-                      <div className="text-base font-bold leading-snug text-[#111111]">Elimine as mordidas e a destruição de objetos de vez</div>
+                      <div className="text-base font-bold leading-snug text-[#111111]">Aprenda a linguagem do seu cachorro e transforme a convivência</div>
                       <div className="text-sm text-[#737373]">Elimine mordidas e destruição · PDF</div>
                     </div>
                   </div>
@@ -477,7 +477,7 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
                     Ebook
                   </div>
                   <div className="mt-1 text-base font-bold uppercase leading-snug text-white">
-                    Elimine as mordidas e a destruição de objetos de vez
+                    Aprenda a linguagem do seu cachorro e transforme a convivência
                   </div>
                 </div>
                 <div className="mt-1 text-sm text-[#FDBA74]">Mordidas e destruição · PDF · Acesso imediato</div>
