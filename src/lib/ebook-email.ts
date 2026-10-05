@@ -2,11 +2,11 @@ import fs from "fs";
 import path from "path";
 import { Resend } from "resend";
 
-// Anexa o PDF que fica em public/ebooks/cao-comportado.pdf (o mesmo usado no
-// download pela página de sucesso). Configure no .env:
+// Anexa o PDF que fica em public/ebooks/transforme-o-comportamento-do-seu-cao.pdf
+// (o mesmo usado no download pela página de sucesso). Configure no .env:
 //   RESEND_API_KEY=re_...
 //   EMAIL_FROM="MEU MÉTODO CÃO <seu@dominioverificado.com>"
-const EBOOK_PATH = path.join(process.cwd(), "public", "ebooks", "cao-comportado.pdf");
+const EBOOK_PATH = path.join(process.cwd(), "public", "ebooks", "transforme-o-comportamento-do-seu-cao.pdf");
 const SENDER = process.env.EMAIL_FROM ?? "MEU MÉTODO CÃO <onboarding@resend.dev>";
 
 function emailHtml(firstName: string): string {
@@ -66,7 +66,7 @@ export async function sendEbookEmail(to: string, firstName?: string): Promise<Eb
       to: [to],
       subject: "Obrigado pela compra! Seu ebook MEU MÉTODO CÃO chegou 🐾",
       html: emailHtml((firstName ?? "").trim()),
-      attachments: [{ filename: "cao-comportado.pdf", content: pdf }],
+      attachments: [{ filename: "transforme-o-comportamento-do-seu-cao.pdf", content: pdf }],
     });
     if (error) {
       console.error("[ebook-email] Erro ao enviar via Resend:", error);

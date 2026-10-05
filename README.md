@@ -7,7 +7,7 @@ entrega do PDF após a confirmação.
 ## Funcionalidades
 
 - Landing page responsiva (mobile-first) com tema **azul claro** e fotos de cachorro
-- Checkout único de **R$ 39,90** com Mercado Pago (PIX, cartão de crédito/débito e boleto via Payment Brick)
+- Checkout único de **R$ 19,90** com Mercado Pago (PIX, cartão de crédito/débito e boleto via Payment Brick)
 - Tela de confirmação com botão de download do ebook (PDF) e suporte via WhatsApp
 - PWA instalável no celular
 - Dark mode automático (mantido)
@@ -39,7 +39,7 @@ Copie `.env.example` para `.env.local` e preencha:
 
 ### 3. Entregar o ebook
 
-Coloque o arquivo PDF do ebook em `public/ebooks/cao-comportado.pdf`. O botão
+Coloque o arquivo PDF do ebook em `public/ebooks/transforme-o-comportamento-do-seu-cao.pdf`. O botão
 "Baixar meu ebook (PDF)" da tela de confirmação baixa exatamente esse arquivo.
 
 ### 4. Rodar em desenvolvimento
@@ -56,7 +56,7 @@ No modo teste do Mercado Pago, use os cartões de teste fornecidos pelo
 ## Fluxo do usuário
 
 1. Acessa a landing do **CÃO COMPORTADO**
-2. Clica em **Quero eliminar por R$ 39,90**
+2. Clica em **Quero eliminar por R$ 19,90**
 3. Finaliza o pagamento no Payment Brick do Mercado Pago (PIX, cartão ou boleto)
 4. Ao ser aprovado, vê a tela de confirmação e faz o **download do ebook** em PDF
 5. Suporte ao cliente pelo WhatsApp (número em `EbookSuccess.tsx`)

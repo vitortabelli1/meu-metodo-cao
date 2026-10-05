@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { QualifyFunnel } from "./QualifyFunnel";
 import {
   ArrowRight,
   BadgeCheck,
@@ -107,6 +108,9 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
           </button>
 
           <nav className="hidden items-center gap-8 text-base font-medium text-[#737373] md:flex">
+            <button type="button" onClick={() => scrollTo("diagnostico")} className="cursor-pointer transition-colors hover:text-[#C2410C]">
+              Diagnóstico
+            </button>
             <button type="button" onClick={() => scrollTo("conteudo")} className="cursor-pointer transition-colors hover:text-[#C2410C]">
               Conteúdo
             </button>
@@ -124,7 +128,7 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
           <div className="flex items-center gap-3">
             <button
               type="button"
-              onClick={() => scrollTo("preco")}
+              onClick={() => scrollTo("diagnostico")}
               className="group hidden h-11 cursor-pointer items-center gap-2 rounded-full bg-gradient-to-r from-[#C2410C] to-[#111111] px-6 text-[15px] font-bold text-white shadow-[0_8px_24px_rgba(194,65,12,.45)] transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(194,65,12,.6)] md:inline-flex"
             >
               Quero o ebook
@@ -164,21 +168,17 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
         <div className="relative mx-auto grid max-w-[1080px] items-center gap-12 px-6 pb-14 pt-14 sm:gap-12 sm:pb-[80px] sm:pt-[80px] lg:grid-cols-2">
           <motion.div {...fadeUp} className="text-center sm:text-left">
             <h1 className="mx-auto mt-6 max-w-xl text-[30px] font-extrabold leading-[1.06] tracking-[-0.03em] text-white sm:mx-0 sm:text-[40px] sm:leading-[1.05] lg:text-[48px]">
-              Aprenda a linguagem do seu{" "}
-              <span className="bg-gradient-to-r from-[#FDBA74] to-[#F97316] bg-clip-text text-transparent">
-                cachorro
-              </span>{" "}
-              e transforme a convivência.
+              Transforme o Comportamento do seu cão.
             </h1>
             <p className="mx-auto mt-5 max-w-lg text-[15px] leading-relaxed text-[#D6D3D1] sm:mx-0 sm:mt-6 sm:text-base">
-              Entenda os sinais, emoções e necessidades que influenciam o
-              comportamento canino e descubra como orientar seu pet de forma
-              positiva, sem gritos ou punições.
+              Descubra as causas reais e aplique técnicas práticas, sem gritos
+              nem punições, para direcionar a energia do seu pet para os
+              comportamentos certos.
             </p>
             <div className="mx-auto mt-8 flex max-w-sm flex-col gap-3 sm:mx-0 sm:mt-10 sm:max-w-none sm:flex-row sm:flex-wrap sm:gap-4">
               <button
                 type="button"
-                onClick={() => scrollTo("preco")}
+                onClick={() => scrollTo("diagnostico")}
                 className="group inline-flex h-14 w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#F97316] to-[#C2410C] px-8 text-base font-extrabold text-white shadow-[0_14px_40px_rgba(249,115,22,.4)] transition-all hover:-translate-y-0.5 hover:shadow-[0_18px_50px_rgba(249,115,22,.55)] sm:w-auto"
               >
                 Quero o ebook
@@ -224,7 +224,8 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
                       <BookOpen className="h-7 w-7" />
                     </div>
                     <div>
-                      <div className="text-base font-bold leading-snug text-[#111111]">Aprenda a linguagem do seu cachorro e transforme a convivência.</div>
+                      <div className="text-base font-bold leading-snug text-[#111111]">Transforme o Comportamento do seu cão.</div>
+                      <div className="text-sm text-[#737373]">Elimine mordidas e destruição · PDF</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-1 rounded-xl bg-orange-50 px-2.5 py-1.5">
@@ -247,6 +248,9 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
           </motion.div>
         </div>
       </section>
+
+      {/* FUNIL DE DIAGNÓSTICO */}
+      <QualifyFunnel onBuy={onBuy} />
 
       {/* CONTEÚDO */}
       <section id="conteudo" className="relative mx-auto max-w-[1080px] px-6 py-14 sm:py-[80px]">
@@ -452,13 +456,13 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
           </span>
           <div className="mt-5 text-center">
             <span className="inline-flex items-center rounded-full bg-red-500/25 px-4 py-1 text-xl font-extrabold text-white line-through decoration-red-300 decoration-[3px] sm:text-2xl">
-              R$ 79,90
+              R$ 39,90
             </span>
             <h2 className="mt-3 text-[20px] font-bold tracking-tight text-white sm:text-[26px]">
               Por apenas
             </h2>
             <div className="mt-1 bg-gradient-to-r from-[#FDBA74] to-[#F97316] bg-clip-text text-5xl font-extrabold leading-none tracking-tight text-transparent sm:text-6xl">
-              R$ 39,90
+              R$ 19,90
             </div>
           </div>
           <p className="mx-auto mt-4 max-w-2xl text-xl font-medium text-[#D6D3D1]">
@@ -476,18 +480,18 @@ export function HomeLanding({ onBuy }: { onBuy: () => void }) {
                     Ebook
                   </div>
                   <div className="mt-1 text-base font-bold uppercase leading-snug text-white">
-                    Aprenda a linguagem do seu cachorro e transforme a convivência.
+                    Transforme o Comportamento do seu cão.
                   </div>
                 </div>
                 <div className="mt-1 text-sm text-[#FDBA74]">Mordidas e destruição · PDF · Acesso imediato</div>
                 <div className="mt-4 flex flex-col items-center gap-1.5">
                   <span className="inline-flex items-center rounded-full bg-red-500/25 px-4 py-1.5 text-xl font-extrabold text-white/90 line-through decoration-red-400 decoration-[3px]">
-                    R$ 79,90
+                    R$ 39,90
                   </span>
                   <div className="flex items-baseline gap-1.5">
                     <span className="text-xl font-bold text-[#FDBA74]">R$</span>
                     <span className="bg-gradient-to-r from-[#FDBA74] to-[#F97316] bg-clip-text text-6xl font-extrabold leading-none tracking-tight text-transparent">
-                      39<span className="text-3xl">,90</span>
+                      19<span className="text-3xl">,90</span>
                     </span>
                   </div>
                 </div>

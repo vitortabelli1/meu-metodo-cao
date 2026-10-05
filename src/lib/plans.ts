@@ -12,7 +12,7 @@ export const PLANS: Record<PlanId, PlanInfo> = {
   ebook: {
     id: "ebook",
     name: "Ebook",
-    amount: 39.9,
+    amount: 19.9,
     reference: "cao-comportado-ebook",
     description: "Ebook MEU MÉTODO CÃO — Guia definitivo para eliminar mordidas e destruição",
   },

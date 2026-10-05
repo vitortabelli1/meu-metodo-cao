@@ -3,7 +3,7 @@
 import { BookOpen, CircleCheckBig, PawPrint } from "lucide-react";
 import Link from "next/link";
 
-const EBOOK_URL = "/ebooks/Elimine_as_Mordidas_e_a_Destruicao_de_Objetos.pdf";
+const EBOOK_URL = "/ebooks/transforme-o-comportamento-do-seu-cao.pdf";
 
 export function EbookSuccess() {
   return (
@@ -31,19 +31,18 @@ MEU MÉTODO CÃO
         <p className="mt-3 text-zinc-600">
           Obrigado pela compra. O ebook <strong>MEU MÉTODO CÃO</strong> está
           liberado — clique abaixo para baixar o PDF
-          <strong> Elimine_as_Mordidas_e_a_Destruicao_de_Objetos</strong> e
-          aplicar as técnicas para eliminar as mordidas e a destruição de
-          objetos.
+          <strong> transforme-o-comportamento-do-seu-cao</strong> e
+          aplicar as técnicas para transformar o comportamento do seu cão.
         </p>
 
         <div className="mt-8 w-full space-y-3">
           <a
             href={EBOOK_URL}
-            download="Elimine_as_Mordidas_e_a_Destruicao_de_Objetos.pdf"
+            download="transforme-o-comportamento-do-seu-cao.pdf"
             className="inline-flex h-14 w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-[#C2410C] px-8 text-base font-bold text-white shadow-[0_10px_30px_rgba(249,115,22,.35)] transition-all hover:-translate-y-0.5 hover:bg-[#111111]"
           >
             <BookOpen className="h-5 w-5" />
-            Clique aqui para baixar o PDF Elimine_as_Mordidas_e_a_Destruicao_de_Objetos
+            Clique aqui para baixar o PDF transforme-o-comportamento-do-seu-cao
           </a>
 
           <Link

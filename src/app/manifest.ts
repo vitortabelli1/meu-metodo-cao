@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "MEU MÉTODO CÃO — Elimine mordidas e destruição de objetos",
     short_name: "MEU MÉTODO CÃO",
     description:
-      "Guia definitivo para eliminar mordidas e destruição de objetos. Ebook em PDF por R$ 39,90.",
+      "Guia definitivo para eliminar mordidas e destruição de objetos. Ebook em PDF por R$ 19,90.",
     start_url: "/",
     display: "standalone",
     background_color: "#FFF7ED",

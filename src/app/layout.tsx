@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Meu Método Cão — O guia definitivo para eliminar mordidas e destruição de objetos",
+  title: "Transforme o Comportamento do seu cão — Ebook em PDF por R$ 19,90",
   description:
-    "Método prático sem gritos para o seu cachorro parar de morder móveis e destruir objetos. Ebook em PDF por R$ 39,90.",
+    "Responda 4 perguntas e descubra por que o seu cachorro age assim. Ebook em PDF com técnicas sem gritos nem punições, por R$ 19,90.",
   manifest: "/manifest.ts",
   appleWebApp: {
     capable: true,
